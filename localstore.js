@@ -13,14 +13,14 @@
 * http://www.maxnov.com/getimagedata/GPL-License.txt
 *
 */
-var LocalStore = function() {
+var localStore = function() {
 	this.isStorage = false;
 	try {
 		typeof(localStorage);
 		this.isStorage = true;
 	}catch(e){}
 };
-LocalStore.prototype = {
+localStore.prototype = {
 	set: function(key, value){
 		if(this.isStorage){ 
 			localStorage.setItem(key, value); 
