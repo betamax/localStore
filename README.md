@@ -17,7 +17,7 @@ Then you need to initialise the function into a variable in your javascript code
 
 Now that everything is set up, you can start using the function! It consists of 'set', 'get', 'del' and 'clear' methods.  
 
-#### localStore.set(key (String), val (String))
+### localStore.set(key (String), val (String))
 
 This method _requires_ a key and a value. The key is a unique (to your domain) identifier that will be used when getting, setting or deleting the item. The value is the data that you are storing. Example:
 
@@ -25,7 +25,7 @@ This method _requires_ a key and a value. The key is a unique (to your domain) i
 
 Now stored on the users computer using either localStorage or a cookie will be the item 'userid' with the value '203948'.  
 
-#### localStore.get(key (String))
+### localStore.get(key (String))
 
 This method _requires_ a key; it _returns_ a string or null. Use this method to fetch the value of an item in the storage that you have already set. For example to get the value of the "userid" key that was set above:
 
@@ -33,7 +33,7 @@ This method _requires_ a key; it _returns_ a string or null. Use this method to 
 
 The `user_id` variable will now contain the `203948` value that was set earlier. If the value was not ever set then `user_id` would be `null`.  
 
-#### localStore.del(key (String))
+### localStore.del(key (String))
 
 This method _requires_ a key. It will attempt to delete an item in the storage with the key you specified. To delete the userid item that we have been using as an example, do the following:
 
@@ -41,7 +41,7 @@ This method _requires_ a key. It will attempt to delete an item in the storage w
 
 There will now be no reference to the userid value stored for this user.  
 
-#### localStore.clear()
+### localStore.clear()
 
 This method will clear all values stored on this users computer for this domain. An example:
 
