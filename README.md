@@ -15,7 +15,7 @@ Then you need to initialise the function into a variable in your javascript code
 
 	var ls = new LocalStore;
 
-Now that everything is set up, you can start using the function! It consists of 'set', 'get', 'del' and 'clear' methods.
+Now that everything is set up, you can start using the function! It consists of 'set', 'get', 'del' and 'clear' methods.  
 
 #### localStore.set(key (String), val (String))
 
@@ -23,7 +23,7 @@ This method _requires_ a key and a value. The key is a unique (to your domain) i
 
 	ls.set("userid", "203948");
 
-Now stored on the users computer using either localStorage or a cookie will be the item 'userid' with the value '203948'.
+Now stored on the users computer using either localStorage or a cookie will be the item 'userid' with the value '203948'.  
 
 #### localStore.get(key (String))
 
@@ -31,7 +31,7 @@ This method _requires_ a key; it _returns_ a string or null. Use this method to 
 
 	var user_id = ls.get("userid");
 
-The `user_id` variable will now contain the `203948` value that was set earlier. If the value was not ever set then `user_id` would be `null`.
+The `user_id` variable will now contain the `203948` value that was set earlier. If the value was not ever set then `user_id` would be `null`.  
 
 #### localStore.del(key (String))
 
@@ -39,7 +39,7 @@ This method _requires_ a key. It will attempt to delete an item in the storage w
 
 	ls.del("userid");
 
-There will now be no reference to the userid value stored for this user.
+There will now be no reference to the userid value stored for this user.  
 
 #### localStore.clear()
 
