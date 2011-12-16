@@ -15,7 +15,7 @@ Then you need to initialise the function into a variable in your javascript code
 
 	var ls = new localStore;
 
-Now that everything is set up, you can start using the function! It consists of 'set', 'get', 'del' and 'clear' methods.  
+Now that everything is set up, you can start using the function! It consists of 'set', 'get', 'del' and 'clear' methods.
 
 ### localStore.set(key (String), val (String))
 
