@@ -7,7 +7,7 @@ localStore is a tiny (999 bytes compressed, 1,799 bytes uncompressed) helper fun
 Usage
 -----
 
-Firstly, include the javascript file on your page just below the final `</body>` tag like so:
+Firstly, include the javascript file on your page just below the final `</body>` tag like so: 
 
 	<script src="http://github.com/betamax/localStore/raw/master/localstore.min.js"></script>
 
