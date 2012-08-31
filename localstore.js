@@ -3,22 +3,25 @@
 * LocalStore - LocalStorage helper with cookie fallback
 *
 * Written by Max Novakovic (http://www.maxnov.com/)
-* Date: Thu Oct 14 2010
+* Date: Fri Aug 31 2012
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *
-* Copyright 2010, Max Novakovic
+* Copyright 2012, Max Novakovic
 * Dual licensed under the MIT or GPL Version 2 licenses.
 * http://www.maxnov.com/getimagedata/MIT-License.txt
 * http://www.maxnov.com/getimagedata/GPL-License.txt
 *
 */
 var localStore = function() {
-	this.isStorage = false;
+	var test = 'a';
 	try {
-		typeof(localStorage);
+        localStorage.setItem(test, test);
+        localStorage.removeItem(test);
 		this.isStorage = true;
-	}catch(e){}
+    } catch(e) {
+    	this.isStorage = false;
+    }
 };
 localStore.prototype = {
 	set: function(key, value){

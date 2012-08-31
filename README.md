@@ -1,8 +1,8 @@
 localStore
 ==============
-*Version: 0.1*
+*Version: 0.2*
 
-localStore is a tiny (999 bytes compressed, 1,799 bytes uncompressed) helper function that aims to simplify use of localStorage and also provide a fallback to users whose browsers don't support localStorage.
+localStore is a tiny (943 bytes gzipped, 1,038 bytes uncompressed) helper function that aims to simplify use of localStorage and also provide a fallback to users whose browsers don't support localStorage.
 
 Usage
 -----
@@ -13,7 +13,7 @@ Firstly, include the javascript file on your page just below the final `</body>`
 
 Then you need to initialise the function into a variable in your javascript code:
 
-	var ls = new LocalStore;
+	var ls = new localStore;
 
 Now that everything is set up, you can start using the function! It consists of 'set', 'get', 'del' and 'clear' methods.  
 
@@ -47,13 +47,6 @@ This method will clear all values stored on this users computer for this domain.
 
 	ls.clear();
 
-Notes
------
-
-See my other project, $.getImageData, which provides a solution to the canvas error 'Security error code: 1000' when trying to access the data of an image from another domain, at: [http://www.maxnov.com/getimagedata/][project_url].
-
-[project_url]: http://www.maxnov.com/getimagedata/
-
 To Do
 -----
 
@@ -61,6 +54,10 @@ To Do
 
 Changelog
 ---------
+
+Version 0.2 - 31/08/12
+
+ * Updated the method of checking for compatility to the method Modernizr currently uses (thanks @mitiya)
 
 Version 0.1 - 14/10/10
 
