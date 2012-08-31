@@ -7,7 +7,7 @@ localStore is a tiny (943 bytes gzipped, 1,038 bytes uncompressed) helper functi
 Usage
 -----
 
-Firstly, include the javascript file on your page just below the final `</body>` tag like so:
+Firstly, include the javascript file on your page just below the final `</body>` tag like so: 
 
 	<script src="http://github.com/betamax/localStore/raw/master/localstore.min.js"></script>
 
@@ -15,7 +15,7 @@ Then you need to initialise the function into a variable in your javascript code
 
 	var ls = new localStore;
 
-Now that everything is set up, you can start using the function! It consists of 'set', 'get', 'del' and 'clear' methods.  
+Now that everything is set up, you can start using the function! It consists of 'set', 'get', 'del' and 'clear' methods.
 
 ### localStore.set(key (String), val (String))
 
